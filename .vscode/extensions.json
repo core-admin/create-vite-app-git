@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "dbaeumer.vscode-eslint",
+    "mikestead.dotenv",
+    "bradlc.vscode-tailwindcss",
+    "mrmlnc.vscode-less"
+  ]
+}

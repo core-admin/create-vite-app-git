@@ -1,0 +1,81 @@
+{
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  // 包管理工具使用 pnpm
+  "npm.packageManager": "pnpm",
+  // 哪些文件夹不显示在工作目录
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/tmp": true,
+    "**/node_modules": false,
+    "**/bower_components": true,
+    "**/dist": false
+    // "**/cache": true
+  },
+  // 查询时 哪些文件将被排查
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/*.log": true,
+    "**/*.log*": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/elehukouben": true,
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/.idea": true,
+    "**/.vscode": false,
+    "**/package-lock": true,
+    "**/yarn.lock": true,
+    "**/pnpm-lock.yaml": true,
+    "**/tmp": true,
+    "out": true,
+    "dist": true,
+    "node_modules": true,
+    "CHANGELOG.md": true,
+    "examples": true,
+    "yarn-error.log": true,
+    "**/.yarn": true,
+    "public": true
+  },
+  // 排除vscode watch的目录与文件
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.vscode/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/bower_components/**": true,
+    "**/dist/**": true,
+    "**/cache/**": true,
+    "**/yarn.lock": true,
+    "**/pnpm-lock.yaml": true,
+    "**/package-lock": true
+  },
+  // vue 文件使用 prettier 格式化
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 自定保存 并使用eslint校验
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // 自定导入建议 直接使用别的文件方法名时，vscode会提示你此方法在本项目中是否有，有的话将导入使用
+  "typescript.suggest.autoImports": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.showUnused": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "path-intellisense.mappings": {
+    "@/": "${workspaceRoot}/src",
+    "#/": "${workspaceRoot}/types"
+  },
+  "typescript.suggest.paths": true,
+  "javascript.suggest.paths": true,
+  // "path-intellisense.autoSlashAfterDirectory": true,
+  "path-intellisense.autoTriggerNextSuggestion": true
+}

@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "useDefineForClassFields": true,
+    "strictFunctionTypes": false,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noLib": false,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    // 定义后未使用的变量 是否抛出错误
+    "noUnusedLocals": false,
+    // 参数定义后未使用 是否抛出错误
+    "noUnusedParameters": false,
+    "experimentalDecorators": true,
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "types": ["vite/client"],
+    "paths": {
+      "@/*": ["src/*"],
+      "#/*": ["types/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
